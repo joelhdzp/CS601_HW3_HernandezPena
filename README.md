@@ -25,7 +25,7 @@ pseudo-elements, combinators, and selectors to style content dynamically and con
 
 ---
 
-### 💡 Key Features
+## 💡 Key Features
 - **Header and Footer** styled using **CSS Flexbox**
 - **Sidebar and Projects** section styled using **CSS Grid**
 - Interactive navigation menu with icons and hover/focus effects
