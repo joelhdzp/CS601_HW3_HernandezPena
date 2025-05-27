@@ -1,6 +1,6 @@
 # CS601 - Assignment 3: Portfolio Page
 
-## Project Description
+## 📄 Project Description
 This Responsive Web Portfolio was created using CSS Flexbox and Grid features for layout management, along with pseudo-classes,
 pseudo-elements, combinators, and selectors to style content dynamically and contextually. It demonstrates:
 
