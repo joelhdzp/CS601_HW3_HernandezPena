@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joel Hernandez Pena | Portfolio</title>
+  <!-- CSS file paths to style Felxbox and Grid -->
+  <link rel="stylesheet" href="flexbox/css/style.css">
+  <link rel="stylesheet" href="grid/css/style.css">
+</head>
+
+<body>
+  <!-- Flexbox Container: Header -->
+  <header>
+    <!-- Interactive Links and Icons -->
+    <nav>
+      <a href="#home">Home <img src="flexbox/images/1_home.svg" alt="Home"></a>
+      <a href="#about">About <img src="flexbox/images/2_about.svg" alt="About"></a>
+      <a href="#projects">Projects <img src="flexbox/images/3_projects.svg" alt="Projects"></a>
+      <a href="#contact">Contact <img src="flexbox/images/4_contact.svg" alt="Contact"></a>
+    </nav>
+  </header>
+  <!-- Grid Container: Sidebar -->
+  <div class="container">
+    <aside id="about" data-section="sidebar">
+      <h1>My Portfolio</h1>
+      <!-- Adding an image of me -->
+      <img src="grid/images/my_photo.png" alt="My Photo">
+      <h2>Joel Hernandez Pena</h2>
+      <!-- Personal Information -->
+      <p><strong>Email:</strong> joelhdzp@bu.edu</p>
+      <p><strong>Location:</strong> Parker, Colorado</p>
+      <p><strong>Education:</strong> Boston University</p>
+      <p><strong>Major:</strong> Software Development</p>
+      <p><strong>Expertise:</strong> Process Automation - Data Science - Information Systems Analysis - Web Application Dev</p>
+      <p><strong>Programming Languages:</strong> Python - SQL - Java - HTML5 - CSS3 - JavaScript</p>
+      <p><strong>Work Experiences:</strong> U.S. Department Of State - The Hershey Company - PepsiCo</p>
+    </aside>
+    <!-- Grid Container: Projects -->
+    <main id="projects">
+      <!-- Each div contains a different project: Name, Description and Image -->
+      <div class="project">
+        <img src="grid/images/Picture1.jpg" alt="Project 1">
+        <div class="project-info">
+          <h3>Web Application Game</h3>
+          <p>DOM-based drag and drop game that fetches data from a JSON file.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="grid/images/Picture2.jpg" alt="Project 2">
+        <div class="project-info">
+          <h3>Consular Management System</h3>
+          <p>System management that optimizes data storing, interview scheduling and payment processing for visa applicants.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="grid/images/Picture3.png" alt="Project 3">
+        <div class="project-info">
+          <h3>HR Process Automation</h3>
+          <p>Applications that enhance the effectiveness of HR operations by automating critical processes.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="grid/images/Picture4.jpg" alt="Project 4">
+        <div class="project-info">
+          <h3>Olympic Games Winner Prediction</h3>
+          <p>Predicting model that chooses medal winners based on athletes' prior performances.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- Flexbox Container: Footer -->
+  <footer>
+    <!-- Footer copyright -->
+    <p><strong>MET Boston University </strong>| 2025 Copyright &copy; All Rights Reserved</p>
+  </footer>
+</body>
+</html>
