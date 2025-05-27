@@ -1,0 +1,68 @@
+/* Flexbox Styles: Header and Footer */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f1b66a77;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #17afc0;
+  color: white;
+  padding: 1rem;
+  flex-wrap: wrap;
+  outline: 2px solid #000000;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  font-weight: normal;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+/* Pseudo-class: hover */
+header nav a:hover {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* Pseudo-class: focus */
+header nav a:focus {
+  outline: 1px solid #ffcc00;
+  outline-offset: 4px;
+}
+
+/* Help align nav icons to the header items */
+header nav img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #940e0e;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+}
