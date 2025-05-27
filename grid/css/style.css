@@ -1,0 +1,122 @@
+/* Grid Styles: Sidebar and Projects */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  padding: 2rem;
+  flex: 1;
+}
+
+/* Sidebar Styling */
+aside {
+  background-color: #72a1c3a9;
+  padding: 1.5rem;
+  box-shadow: 0 10px 10px rgba(2, 2, 2, 0.353);
+  font-size: 0.9rem;
+}
+
+aside h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  margin-bottom: 2rem;
+  margin: auto;
+  justify-content: center;
+  padding: 1rem;
+}
+
+aside h2 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: .2rem;
+}
+
+aside p {
+  font-size: .8rem; 
+}
+
+/* Combinator: Adjacent Sibling - Italic and space below h2 or p when directly followed by p */
+aside h2 + p, p + p {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* Attribute Selector: Add a border on the sidebar's left side with data-section="sidebar" */
+aside[data-section="sidebar"] {
+  border-left: 10px solid #003366;
+  padding-left: 1rem;
+}
+
+/* Grid layout for 2x2 projects beside sidebar */
+main {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 3rem;
+}
+
+.project {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #bea1e3ce;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+/* Pseudo-element: before */
+.project::before {
+  content: "📌";
+  font-size: large;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Pseudo-class: hover */
+.project:hover {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #690096;
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+  outline: 2px outset #690096;
+  transform: scale(1.02);
+}
+
+/* Pseudo-class: nth-chiid(n) */
+.project:nth-child(odd) {
+  background-color: #e47a1ec3;
+}
+
+/* Help align the project's pictures to the containers */
+.project img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Stack layout on small screens */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+}
