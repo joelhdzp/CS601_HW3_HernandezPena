@@ -15,6 +15,7 @@ pseudo-elements, combinators, and selectors to style content dynamically and con
 ```
 /CS601_HW3_HernandezPena
 ├── index.html                                                                              → Main HTML form interface
+├── README.md
 ├── /flexbox
 │   ├── css/style.css                                                                       → Styling for Flexbox Features
 │   └── images/ (1_home.svg, 2_about.svg, 3_projects.svg, 4_contact.svg)
